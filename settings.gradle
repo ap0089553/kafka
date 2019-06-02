@@ -1,0 +1,4 @@
+rootProject.name = 'kafka'
+include 'beginner'
+include 'twitter'
+
