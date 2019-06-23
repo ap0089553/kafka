@@ -20,12 +20,13 @@ public class ProducerDemo {
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootStrapServer);
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+        properties.put(ProducerConfig.ACKS_CONFIG, "all");
 
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
 
         for (int i = 0; i < 10; i++) {
-            String topic = "first_topic";
-            String key = "id_" + i;
+            String topic = "first-topic";
+            String key = "id-" + i;
             String value = "Hello from the planet " + i;
 
             ProducerRecord<String, String> record = new ProducerRecord<>(topic, key, value);

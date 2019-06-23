@@ -23,7 +23,8 @@ public class ConsumerDemo {
     private void run() {
         String bootStrapServer = "localhost:9092";
         String groupId = "my-first-application";
-        String topic = "first_topic";
+        String topic = "first-topic";
+
         //Latch for dealing with multiple threads
         CountDownLatch countDownLatch = new CountDownLatch(1);
 
