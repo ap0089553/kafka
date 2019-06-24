@@ -62,6 +62,7 @@ public class ConsumerDemo {
 
         ConsumerRunnable(String bootStrapServer, String groupId, String topic, CountDownLatch latch) {
             this.latch = latch;
+            //Create consumer configs
             Properties properties = new Properties();
             properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootStrapServer);
             properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());

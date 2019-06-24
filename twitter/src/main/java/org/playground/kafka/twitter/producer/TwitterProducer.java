@@ -71,7 +71,7 @@ public class TwitterProducer {
             }
 
             if (Objects.nonNull(msg)) {
-                producer.send(new ProducerRecord<>("twitter_tweets", "", msg), (metadata, exception) -> {
+                producer.send(new ProducerRecord<>("twitter-tweets", "", msg), (metadata, exception) -> {
                     if (Objects.nonNull(exception)) {
                         logger.error("Something went wrong", exception);
                     }
