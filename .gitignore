@@ -5,3 +5,5 @@ gradlew.bat
 gradlew
 beginner/build/
 beginner/out/
+kafka-stream-filter-tweets/out
+twitter/out
