@@ -113,7 +113,7 @@ public class TwitterProducer {
         StatusesFilterEndpoint hoseBirdEndpoint = new StatusesFilterEndpoint();
 
         // Optional: set up some followings and track terms
-        List<String> terms = new ArrayList<>(Collections.singletonList("kafka"));
+        List<String> terms = new ArrayList<>(Arrays.asList("Modi", "Shah", "Politics", "India"));
 
         hoseBirdEndpoint.trackTerms(terms);
 

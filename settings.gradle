@@ -1,4 +1,5 @@
 rootProject.name = 'kafka'
 include 'beginner'
 include 'twitter'
+include 'kafka-stream-filter-tweets'
 
